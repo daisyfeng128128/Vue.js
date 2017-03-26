@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/vue.min.js"></script>
+	
+</head>
+<body>
+	<div id="app">
+	  {{ message }}
+	</div>
+	<script>
+		//vue的核心是一个允许采用简洁的模板语法来声明式的将数据渲染进DOM
+		var app = new Vue({
+		  el: '#app',
+		  data: {
+		    message: 'Hello Vue!'
+		  }
+		})
+	</script>
+</body>
+</html>
